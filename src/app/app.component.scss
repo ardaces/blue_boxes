@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  font-family: sans-serif;
+  justify-content: center;
+
+  app-post-viewer {
+    --post-viewer-border-width: .05rem;
+    --post-viewer-border-radius: .5rem;
+    --margins: 0rem;
+    margin: var(--margins);
+    flex: 0 1 calc(10% - calc(var(--margins) * 2) - calc(var(--post-viewer-border-width) * 2));
+    height: 6rem;
+    box-sizing: border-box;
+  }
+}
